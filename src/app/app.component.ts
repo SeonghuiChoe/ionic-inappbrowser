@@ -1,3 +1,4 @@
+import { SplashScreen } from '@ionic-native/splash-screen';
 import { Component } from '@angular/core';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 
@@ -5,11 +6,17 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
   templateUrl: 'app.html'
 })
 export class MyApp {
-
-  constructor(private iab: InAppBrowser) {}
+  constructor(
+    private iab: InAppBrowser,
+    private splashScreen: SplashScreen,
+  ) {}
 
   ngOnInit() {
-    const browser = this.iab.create('http://192.168.0.102:8080', '_self', 'location=yes');
-    browser.show()
+    // TODO: Insert crm web page url
+    const browser = this.iab.create('http://daum.net', '_blank', 'location=no');
+    browser.on('loadstop').subscribe(event => {
+      this.splashScreen.hide();
+      browser.show();
+    });
   }
 }
