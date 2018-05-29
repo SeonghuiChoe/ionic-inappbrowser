@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>ionic-inappbrowser</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+<widget id="company.pyundoori.crm.cocoon" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>밸런스브레인</name>
+    <description>Balance Brain CRM App.</description>
+    <author email="balancebrain@gmail.com" href="http://www.balancebrain.co.kr/">Pyundoori Creative Solution SW</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="*" />

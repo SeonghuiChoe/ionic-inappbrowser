@@ -1,17 +1,12 @@
 {
-  "name": "ionic-inappbrowser",
+  "name": "crm-cocoon",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "Pyundoori sw",
+  "homepage": "http://www.balancebrain.co.kr/",
   "private": true,
   "scripts": {
-    "clean": "ionic-app-scripts clean",
-    "build": "ionic-app-scripts build",
-    "lint": "ionic-app-scripts lint",
-    "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve",
-    "docker:build": "docker build -t ionic-inappbrowser .",
-    "docker:run": "docker run -it --rm -v $PWD:/usr/local/app/ ionic-inappbrowser /bin/bash"
+    "docker:build": "docker build -t crm-cocoon .",
+    "docker:run": "docker run -it --rm -v $PWD:/usr/local/app/ crm-cocoon /bin/bash"
   },
   "dependencies": {
     "@angular/animations": "5.2.10",
